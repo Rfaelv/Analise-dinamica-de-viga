@@ -24,8 +24,8 @@ x = np.arange(0, L+L/100, L/100)
 fi_cosseno = 1 - np.cos(x*pi/(2*L))
 fi_cosseno_xx = (pi/(2*L))**2*np.cos(x*pi/(2*L))
 
-fi_polinomio = 1/L**2*x**2
-fi_polinomio_xx = np.full(len(x), 2/L**2)
+fi_polinomio = -x**3/(2*L**3)+3*x**2/(2*L**2)
+fi_polinomio_xx = -6*x/(2*L**3)+6/(2*L**2)
 
 # Integração
 m_modal_cosseno = quadraturaGaussiana(10, 0, L, x, m_linear*fi_cosseno**2)
