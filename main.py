@@ -31,8 +31,8 @@ fi_polinomio_xx = -6*x/(2*L**3)+6/(2*L**2)
 m_modal_cosseno = quadraturaGaussiana(10, 0, L, x, m_linear*fi_cosseno**2)
 k_modal_cosseno = quadraturaGaussiana(10, 0, L, x, E*I*fi_cosseno_xx**2)
 
-m_modal_polinomio = quadraturaGaussiana(3, 0, L, x, m_linear*fi_polinomio**2)
-k_modal_polinomio = quadraturaGaussiana(3, 0, L, x, E*I*fi_polinomio_xx**2)
+m_modal_polinomio = quadraturaGaussiana(5, 0, L, x, m_linear*fi_polinomio**2)
+k_modal_polinomio = quadraturaGaussiana(5, 0, L, x, E*I*fi_polinomio_xx**2)
 
 # Saída
 print(50*'=')
